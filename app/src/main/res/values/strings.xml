@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Galuh Coffe</string>
+    <string name="kopi">Coffee</string>
+    <string name="kalkulasiawal">0</string>
+    <string name="btntambah">+</string>
+    <string name="btnkurang">-</string>
+    <string name="Total">Total Harga : Rp </string>
+    <string name="harga">Harga Kopi : Rp 5000 </string>
+    <string name="chckboxsusu">Susu</string>
+    <string name="btnhitung">Hitung</string>
+    <string name="btnpesan">pesan</string>
+    <string name="action_setting">Setting</string>
+</resources>

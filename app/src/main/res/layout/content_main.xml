@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.galuh.justjava.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:gravity="center_horizontal">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linear">
+
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btntambah"
+            android:layout_below="@+id/judul"
+            android:layout_toRightOf="@+id/total"
+            android:layout_toEndOf="@+id/total"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btntambah"
+            android:layout_toRightOf="@+id/btntambah"
+            android:layout_toEndOf="@+id/btntambah"
+            android:id="@+id/kalkulasiawal"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <Button
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btntambah"
+            android:layout_toRightOf="@+id/kalkulasiawal"
+            android:layout_toEndOf="@+id/kalkulasiawal"
+            android:id="@+id/btnkurang"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:text="Toping Susu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chckboxsusu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linear" />
+
+    <TextView
+        android:text="Harga Kopi : 5000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/harga"
+        android:gravity="center"
+        android:layout_below="@+id/chckboxsusu"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/harga"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:text="total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnhitung"
+            android:layout_below="@+id/harga"
+            android:layout_toLeftOf="@+id/harga"
+            android:layout_toStartOf="@+id/harga"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnhitung"
+            android:layout_toRightOf="@+id/chckboxsusu"
+            android:layout_toEndOf="@+id/chckboxsusu"
+            android:id="@+id/btnpesan"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Total : "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/total"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_below="@+id/harga"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/name"
+        android:hint="Name" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/judul"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+</RelativeLayout>
